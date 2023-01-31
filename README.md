@@ -1,6 +1,10 @@
-#Dynamic & Conditional Volume Attachment - Example
+# Dynamic & Conditional Volume Attachment - Vito's Example
 
-This code creates an AWS instance and attaches pre-created EBS volumes to it. It uses instance owner, disk information, and device names to determine which volumes should be attached. The code also sets a name tag for the instance.
+<p align="center">
+  <img src="./graph.svg" />
+</p>
+
+This code creates an AWS instance and attaches pre-created EBS volumes to it. It uses instance owner, disk information, and device names to determine which volumes should be attached. Only the name tag on the EBS volume, and knowledge of which instance they should belong to, is required to know ahead of time. 
 
 ## Requirements
 

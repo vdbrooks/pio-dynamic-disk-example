@@ -8,11 +8,11 @@ This code creates an AWS instance and attaches pre-created EBS volumes to it. It
 
 The idea here is that when you create a module for EC2 instances, you can do the following:
 
-1. Use a variable to define its identity (can also use the concatenation of name components in the same way, when filtering)
-2. Use maps to store the disk information that you know pre-runtime (such as what disks will belong to what instance)
-3. Filter the disks with an expression (with a local) so that you have a local variable that holds only the disks you want
-4. Create instances of the data source (with count) by filtering on that filtered_disk list
-5. And then create the attachments based on the count length of the EBS data source, referencing the attributes you need from it dynamically. 
+- Use a variable to define its identity (can also use the concatenation of name components in the same way, when filtering)
+- Use maps to store the disk information that you know pre-runtime (such as what disks will belong to what instance)
+- Filter the disks with an expression (with a local) so that you have a local variable that holds only the disks you want
+- Create instances of the data source (with count) by filtering on that filtered_disk list
+- And then create the attachments based on the count length of the EBS data source, referencing the attributes you need from it dynamically. 
 
 This example meets all the requirements discussed. 
 
